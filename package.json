@@ -25,6 +25,7 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "devolution": "^1.1.2"
+    "devolution": "^1.1.2",
+    "lambda-rollbar": "^3.0.0"
   }
 }
