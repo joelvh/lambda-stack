@@ -5,18 +5,18 @@ AWS Lambda toolkit for JavaScript and Node.js
 ## Features
 
 * Middlewares - uses [middy](https://middy.js.org)
-  * [serverless-offline](./middlewares/serverless-offline.js) middleware - replaces "offline" event values with local development (e.g. localhost) values for more accurate testing
-  * [nestedQueryStringParameters](./middlewares/nestedQueryStringParameters.js) middleware - combines single- and multi-value query string parameters into a nested object as necessary (similar to Rails) using [`qs`](https://github.com/ljharb/qs) - accessible as `event.nestedQueryStringParameters`
+  * [serverless-offline](./src/middlewares/serverless-offline.js) middleware - replaces "offline" event values with local development (e.g. localhost) values for more accurate testing
+  * [nestedQueryStringParameters](./src/middlewares/nestedQueryStringParameters.js) middleware - combines single- and multi-value query string parameters into a nested object as necessary (similar to Rails) using [`qs`](https://github.com/ljharb/qs) - accessible as `event.nestedQueryStringParameters`
 * Error Handling
-  * [Rollbar](./examples/rollbar.js) error handler - handler wrapper to capture errors
+  * [Rollbar](./src/examples/rollbar.js) error handler - handler wrapper to capture errors
 * Routing - uses [custom-router](https://github.com/joelvh/custom-router) for path matching and more
 
 ## Usage
 
 Use the default [middy](https://middy.js.org) middleware we've setup, along with:
 
-* [serverless-offline](./middlewares/serverless-offline.js)
-* [nestedQueryStringParameters](./middlewares/nestedQueryStringParameters.js)
+* [serverless-offline](./src/middlewares/serverless-offline.js)
+* [nestedQueryStringParameters](./src/middlewares/nestedQueryStringParameters.js)
 
 ```es6
 import { withDefaultMiddleware } from 'lambda-stack/middlewares'

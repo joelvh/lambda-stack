@@ -7,8 +7,8 @@ import {
   httpMultipartBodyParser,
   urlEncodeBodyParser
 } from 'middy/middlewares'
-import serverlessOffline from './middlewares/serverless-offline'
-import nestedQueryStringParameters from './middlewares/nestedQueryStringParameters'
+import serverlessOffline from './serverless-offline'
+import nestedQueryStringParameters from './nestedQueryStringParameters'
 
 export function withDefaultMiddleware (handler) {
   return middy(handler)
