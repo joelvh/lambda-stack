@@ -1,0 +1,32 @@
+{
+  "name": "lambda-stack",
+  "version": "0.1.0",
+  "description": "AWS Lambda toolkit for JavaScript and Node.js",
+  "main": "dist/index.js",
+  "repository": "https://github.com/joelvh/lambda-stack",
+  "author": "Joel Van Horn",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "test": "",
+    "build": "babel src -d dist --verbose",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm version patch",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "custom-router": "^1.0.4",
+    "http-errors": "^1.7.3",
+    "middy": "^0.29.0",
+    "qs": "^6.9.0",
+    "statuses": "^1.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "devolution": "^1.1.2"
+  }
+}
