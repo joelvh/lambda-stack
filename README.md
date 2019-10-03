@@ -2,6 +2,20 @@
 
 AWS Lambda toolkit for JavaScript and Node.js
 
+## Install
+
+```bash
+yarn add lambda-stack
+```
+
+### Publish
+
+This package is published by first converting to ES5 modules in a `dist` folder. The `package.json` is copied to `dist` folder and published from there to allow importing modules from `lambda-stack/middlewares` instead of `lambda-stack/dist/middlewares`.
+
+```bash
+yarn dist && npm publish dist
+```
+
 ## Features
 
 * Middlewares - uses [middy](https://middy.js.org)
