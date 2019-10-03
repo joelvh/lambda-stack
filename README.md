@@ -7,8 +7,6 @@ AWS Lambda toolkit for JavaScript and Node.js
 * Middlewares - uses [middy](https://middy.js.org)
   * [serverless-offline](./src/middlewares/serverless-offline.js) middleware - replaces "offline" event values with local development (e.g. localhost) values for more accurate testing
   * [nestedQueryStringParameters](./src/middlewares/nestedQueryStringParameters.js) middleware - combines single- and multi-value query string parameters into a nested object as necessary (similar to Rails) using [`qs`](https://github.com/ljharb/qs) - accessible as `event.nestedQueryStringParameters`
-* Error Handling
-  * [Rollbar](./src/examples/rollbar.js) error handler - handler wrapper to capture errors
 * Routing - uses [custom-router](https://github.com/joelvh/custom-router) for path matching and more
 
 ## Usage

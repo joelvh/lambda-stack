@@ -2414,11 +2414,6 @@ labeled-stream-splicer@^2.0.0:
     inherits "^2.0.1"
     stream-splicer "^2.0.0"
 
-lambda-rollbar@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/lambda-rollbar/-/lambda-rollbar-3.0.0.tgz#62acd58a041dc3f8673687e3d66ff6100b35d240"
-  integrity sha512-OIKTtnXvBexpkGCu57NbDrcSjDzajxFZlRS/iyOD2sqY+Uw1APRNBkdy9A2TBsM55ChDETT0PeW7z4yRrt1X1Q==
-
 lodash.memoize@~3.0.3:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-3.0.4.tgz#2dcbd2c287cbc0a55cc42328bd0c736150d53e3f"
