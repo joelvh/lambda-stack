@@ -1,6 +1,6 @@
 {
   "name": "lambda-stack",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "AWS Lambda toolkit for JavaScript and Node.js",
   "main": "index.js",
   "repository": "https://github.com/joelvh/lambda-stack",
