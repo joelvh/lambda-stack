@@ -2,20 +2,16 @@
   "name": "lambda-stack",
   "version": "0.1.2",
   "description": "AWS Lambda toolkit for JavaScript and Node.js",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "https://github.com/joelvh/lambda-stack",
   "author": "Joel Van Horn",
   "license": "MIT",
   "private": false,
   "type": "module",
-  "files": [ 
-    "dist/**/*" 
-  ],
   "scripts": {
-    "test": "",
+    "dist": "npm version patch && yarn build && cp package.json dist/",
     "build": "babel src -d dist --verbose",
     "prepare": "npm run build",
-    "prepublishOnly": "npm version patch",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
