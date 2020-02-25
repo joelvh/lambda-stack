@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dist": "npm version patch && yarn build && cp package.json dist/",
+    "dist": "npm version patch && npm run build && cp package.json dist/",
     "build": "babel src -d dist --verbose",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
