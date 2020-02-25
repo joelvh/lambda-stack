@@ -7,7 +7,6 @@
   "author": "Joel Van Horn",
   "license": "MIT",
   "private": false,
-  "type": "module",
   "scripts": {
     "dist": "npm version patch && yarn build && cp package.json dist/",
     "build": "babel src -d dist --verbose",
